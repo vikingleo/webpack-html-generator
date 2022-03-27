@@ -1,0 +1,49 @@
+/**
+均分网格
+ */
+
+.avg {
+  display: flex;
+  align-items: stretch;
+
+  &.avg-active {
+    .avg-item {
+      &:active {
+        opacity: .6;
+      }
+    }
+  }
+
+  .avg-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &.avg-border {
+    .avg-item {
+      border: 1px solid #eee;
+      margin: {
+        bottom: -1px;
+        left: -1px;
+      }
+      &:last-child {
+        border-right: 1px solid #eee;
+      }
+    }
+  }
+
+  @for $i from 1 through 10 {
+    &.avg-#{$i} {
+      flex-wrap: wrap;
+
+      &.avg-border {
+        margin-right: -#{$i+1}px;
+      }
+
+      .avg-item {
+        width: (100%/$i);
+      }
+    }
+  }
+}

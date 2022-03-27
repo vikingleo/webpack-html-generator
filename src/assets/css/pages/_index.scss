@@ -1,0 +1,15 @@
+.home-swiper {
+  background-color: #000;
+
+  .swiper-slide {
+    background: {
+      repeat: no-repeat;
+      size: 100%;
+      position: center;
+    };
+  }
+}
+
+.swiper-shade {
+  background-color: rgba(#000, .8);
+}

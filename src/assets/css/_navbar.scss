@@ -1,0 +1,33 @@
+.top-navbar {
+  height: 40px;
+  z-index: 2;
+  background-color: rgba(#000, .3);
+  padding: {
+    top: 54px;
+    bottom: 33px;
+    left: 60px;
+    right: 60px;
+  };
+
+  .navbar-brand {
+    display: inline-block;
+    width: 253px;
+    height: 33px;
+
+    background: {
+      repeat: no-repeat;
+      size: 100% auto;
+      position: left top;
+    };
+  }
+
+  &-nav {
+    margin: 0;
+
+    &-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+}
